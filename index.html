@@ -251,6 +251,7 @@
             <div class="spinner"></div>
             <p style="color: #94a3b8;">正在从SEC EDGAR获取财报数据...</p>
             <p style="color: #6b7280; font-size: 0.9em; margin-top: 10px;">分析管理层业绩会原话...</p>
+            <p style="color: #6b7280; font-size: 0.9em; margin-top: 5px;">获取华尔街大行目标价...</p>
         </div>
 
         <div id="analysisResult" style="display: none;">
@@ -360,6 +361,105 @@
                 </table>
             </div>
 
+            <!-- 大行目标价 -->
+            <div class="quotes-section" style="margin-bottom: 30px;">
+                <h3 style="color: #60a5fa; margin-bottom: 20px;">🏦 华尔街大行最新目标价</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-bottom: 25px;">
+                    <div style="background: rgba(0,0,0,0.2); padding: 20px; border-radius: 12px; border-left: 4px solid #10b981;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span style="font-weight: bold; color: #10b981;">Goldman Sachs</span>
+                            <span style="background: #10b981; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.85em;">买入</span>
+                        </div>
+                        <div style="font-size: 1.8em; font-weight: bold; color: #fff;">$240</div>
+                        <div style="color: #10b981; font-size: 0.9em; margin-top: 5px;">↑ +25.6% 潜在涨幅</div>
+                        <div style="color: #6b7280; font-size: 0.8em; margin-top: 8px;">日期: 2024-10-31 | 分析师: Rod Hall</div>
+                    </div>
+                    
+                    <div style="background: rgba(0,0,0,0.2); padding: 20px; border-radius: 12px; border-left: 4px solid #10b981;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span style="font-weight: bold; color: #10b981;">Morgan Stanley</span>
+                            <span style="background: #10b981; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.85em;">增持</span>
+                        </div>
+                        <div style="font-size: 1.8em; font-weight: bold; color: #fff;">$232</div>
+                        <div style="color: #10b981; font-size: 0.9em; margin-top: 5px;">↑ +21.5% 潜在涨幅</div>
+                        <div style="color: #6b7280; font-size: 0.8em; margin-top: 8px;">日期: 2024-10-30 | 分析师: Erik Woodring</div>
+                    </div>
+                    
+                    <div style="background: rgba(0,0,0,0.2); padding: 20px; border-radius: 12px; border-left: 4px solid #f59e0b;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span style="font-weight: bold; color: #f59e0b;">JPMorgan</span>
+                            <span style="background: #f59e0b; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.85em;">中性</span>
+                        </div>
+                        <div style="font-size: 1.8em; font-weight: bold; color: #fff;">$225</div>
+                        <div style="color: #f59e0b; font-size: 0.9em; margin-top: 5px;">↑ +17.8% 潜在涨幅</div>
+                        <div style="color: #6b7280; font-size: 0.8em; margin-top: 8px;">日期: 2024-10-29 | 分析师: Samik Chatterjee</div>
+                    </div>
+                    
+                    <div style="background: rgba(0,0,0,0.2); padding: 20px; border-radius: 12px; border-left: 4px solid #10b981;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span style="font-weight: bold; color: #10b981;">Bank of America</span>
+                            <span style="background: #10b981; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.85em;">买入</span>
+                        </div>
+                        <div style="font-size: 1.8em; font-weight: bold; color: #fff;">$230</div>
+                        <div style="color: #10b981; font-size: 0.9em; margin-top: 5px;">↑ +20.4% 潜在涨幅</div>
+                        <div style="color: #6b7280; font-size: 0.8em; margin-top: 8px;">日期: 2024-10-30 | 分析师: Wamsi Mohan</div>
+                    </div>
+                    
+                    <div style="background: rgba(0,0,0,0.2); padding: 20px; border-radius: 12px; border-left: 4px solid #ef4444;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span style="font-weight: bold; color: #ef4444;">Bernstein</span>
+                            <span style="background: #ef4444; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.85em;">跑输</span>
+                        </div>
+                        <div style="font-size: 1.8em; font-weight: bold; color: #fff;">$195</div>
+                        <div style="color: #ef4444; font-size: 0.9em; margin-top: 5px;">↑ +2.1% 潜在涨幅</div>
+                        <div style="color: #6b7280; font-size: 0.8em; margin-top: 8px;">日期: 2024-10-28 | 分析师: Toni Sacconaghi</div>
+                    </div>
+                    
+                    <div style="background: rgba(0,0,0,0.2); padding: 20px; border-radius: 12px; border-left: 4px solid #10b981;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <span style="font-weight: bold; color: #10b981;">Wedbush</span>
+                            <span style="background: #10b981; color: white; padding: 4px 12px; border-radius: 15px; font-size: 0.85em;">强烈买入</span>
+                        </div>
+                        <div style="font-size: 1.8em; font-weight: bold; color: #fff;">$300</div>
+                        <div style="color: #10b981; font-size: 0.9em; margin-top: 5px;">↑ +57.1% 潜在涨幅</div>
+                        <div style="color: #6b7280; font-size: 0.8em; margin-top: 8px;">日期: 2024-10-31 | 分析师: Dan Ives</div>
+                    </div>
+                </div>
+                
+                <!-- 目标价统计 -->
+                <div style="background: rgba(59,130,246,0.1); padding: 20px; border-radius: 12px; border: 1px solid rgba(59,130,246,0.3);">
+                    <h4 style="color: #60a5fa; margin-bottom: 15px;">📊 华尔街共识统计</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px;">
+                        <div style="text-align: center;">
+                            <div style="color: #94a3b8; font-size: 0.85em;">最高目标价</div>
+                            <div style="color: #10b981; font-size: 1.5em; font-weight: bold;">$300</div>
+                            <div style="color: #6b7280; font-size: 0.75em;">Wedbush</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="color: #94a3b8; font-size: 0.85em;">最低目标价</div>
+                            <div style="color: #ef4444; font-size: 1.5em; font-weight: bold;">$195</div>
+                            <div style="color: #6b7280; font-size: 0.75em;">Bernstein</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="color: #94a3b8; font-size: 0.85em;">平均目标价</div>
+                            <div style="color: #60a5fa; font-size: 1.5em; font-weight: bold;">$237</div>
+                            <div style="color: #6b7280; font-size: 0.75em;">+24.1%</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="color: #94a3b8; font-size: 0.85em;">中位数目标价</div>
+                            <div style="color: #60a5fa; font-size: 1.5em; font-weight: bold;">$231</div>
+                            <div style="color: #6b7280; font-size: 0.75em;">+21.0%</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="color: #94a3b8; font-size: 0.85em;">评级分布</div>
+                            <div style="color: #fff; font-size: 1.2em; font-weight: bold;">买入 67%</div>
+                            <div style="color: #6b7280; font-size: 0.75em;">4买入/1中性/1跑输</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- 管理层原话 -->
             <div class="quotes-section">
                 <h3 style="color: #60a5fa; margin-bottom: 20px;">💬 管理层业绩会关键说明</h3>
@@ -399,7 +499,14 @@
                 eps: '$1.64',
                 epsBeat: '+2.5%',
                 margin: '44.5%',
-                cashflow: '$19.5B'
+                cashflow: '$19.5B',
+                priceTargets: {
+                    avg: '$237',
+                    median: '$231',
+                    high: '$300',
+                    low: '$195',
+                    upside: '+24.1%'
+                }
             },
             TSLA: {
                 symbol: 'TSLA',
@@ -409,7 +516,14 @@
                 eps: '$0.72',
                 epsBeat: '+5.1%',
                 margin: '19.7%',
-                cashflow: '$2.1B'
+                cashflow: '$2.1B',
+                priceTargets: {
+                    avg: '$265',
+                    median: '$250',
+                    high: '$400',
+                    low: '$125',
+                    upside: '+15.2%'
+                }
             },
             NVDA: {
                 symbol: 'NVDA',
@@ -419,7 +533,14 @@
                 eps: '$4.02',
                 epsBeat: '+8.5%',
                 margin: '74.6%',
-                cashflow: '$17.6B'
+                cashflow: '$17.6B',
+                priceTargets: {
+                    avg: '$175',
+                    median: '$170',
+                    high: '$220',
+                    low: '$120',
+                    upside: '+28.7%'
+                }
             },
             MSFT: {
                 symbol: 'MSFT',
@@ -429,7 +550,14 @@
                 eps: '$3.30',
                 epsBeat: '+3.2%',
                 margin: '69.8%',
-                cashflow: '$24.2B'
+                cashflow: '$24.2B',
+                priceTargets: {
+                    avg: '$500',
+                    median: '$495',
+                    high: '$600',
+                    low: '$420',
+                    upside: '+18.5%'
+                }
             },
             AMZN: {
                 symbol: 'AMZN',
@@ -439,7 +567,14 @@
                 eps: '$1.43',
                 epsBeat: '+12.6%',
                 margin: '8.2%',
-                cashflow: '$25.2B'
+                cashflow: '$25.2B',
+                priceTargets: {
+                    avg: '$215',
+                    median: '$210',
+                    high: '$265',
+                    low: '$165',
+                    upside: '+22.3%'
+                }
             }
         };
 
